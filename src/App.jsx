@@ -10,10 +10,14 @@ function App() {
   };
 
   const dec = () => {
-    if (count <= 0) {
+    console.log(count-secondNo)
+    if (count-secondNo<=0) {
+      setCount(0)
       return;
+
+
     }
-    setCount(count - 1);
+    setCount(count - secondNo);
   };
 
   const changeNotwo = () => {
